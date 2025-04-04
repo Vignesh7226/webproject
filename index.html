@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img class="profile-image" id="user-image" src="" alt="User profile">
+            </div>
+            <div class="profile-body">
+                <h1 class="user-name" id="user-name">Loading...</h1>
+                <p class="user-meta"><span id="user-age"></span> years • <span id="user-gender"></span></p>
+                
+                <div class="detail-card">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div class="detail-label">Location</div>
+                            <div class="detail-value" id="user-location"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="detail-label">Email</div>
+                            <div class="detail-value" id="user-email"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="detail-label">Phone</div>
+                            <div class="detail-value" id="user-phone"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="generate-btn" class="btn-generate">
+                    <i class="fas fa-sync-alt"></i> Generate New User
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
